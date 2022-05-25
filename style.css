@@ -1,0 +1,104 @@
+.header, .navigation, .fonctionnement__liste, .fonctionnement__element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* {
+  font-family: roboto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+}
+
+.header__titre {
+  font-family: shrikhand;
+  font-size: 70px;
+}
+
+.header__reservation {
+  gap: 20px;
+  padding-top: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #F4F4F4;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__h1 {
+  font-size: 45px;
+  /*padding-inline: 20%;*/
+}
+
+.header__h2 {
+  font-size: 35px;
+  font-weight: 300;
+  /*padding-inline: 10%;*/
+}
+
+.header__bouton {
+  background: linear-gradient(350deg, #9356DC, #FF79DA);
+  color: white;
+  font-size: 35px;
+  padding: 35px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 55px;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 5px 5px 20px #cdcdcd;
+          box-shadow: 5px 5px 20px #cdcdcd;
+  border: none;
+}
+
+.navigation {
+  font-size: 30px;
+  padding-block: 20px;
+  gap: 10px;
+  background-color: #E5E5E5;
+}
+
+.fonctionnement__titre {
+  font-size: 40px;
+  font-weight: 600;
+  padding: 40px 0px 30px 20px;
+}
+
+.fonctionnement__liste {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+  padding-inline: 50px;
+}
+
+.fonctionnement__element {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  list-style-type: none;
+  font-size: 35px;
+  font-weight: 500;
+  width: 100%;
+  -webkit-box-shadow: 5px 5px 20px #cdcdcd;
+          box-shadow: 5px 5px 20px #cdcdcd;
+  padding: 50px 0px 50px 20px;
+  border-radius: 35px;
+}
+
+.fonctionnement__element:hover {
+  background-color: #F2E8FF;
+}
+
+.fonctionnement__icon {
+  padding-inline: 40px;
+}
+/*# sourceMappingURL=style.css.map */
