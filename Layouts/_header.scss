@@ -5,6 +5,12 @@
     margin: 0;
     list-style-type:none;
 }
+a{
+    text-decoration:none;
+    &:visited{
+        color:black;
+    }
+}
 .header{
     &__reservation{
         gap:20px;
@@ -22,16 +28,10 @@
         font-weight: 300;
         /*padding-inline: 10%;*/
     }
-    &__bouton{
-        background: linear-gradient(350deg,$couleur-primaire,$couleur-secondaire);
-        color:white;
-        font-size: 35px;
-        padding:35px;
-        width:fit-content;
-        border-radius: 55px;
-        margin-bottom:50px;
-        box-shadow: 5px 5px 20px $gris-ombre;
-        border:none;
+    &__image{
+        position:absolute;
+        width:100%;
+        z-index: 1;
     }
 }
 .navigation{

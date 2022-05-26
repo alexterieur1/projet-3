@@ -1,8 +1,24 @@
 .container{
     background-color: $gris-menu;
     padding-bottom: 100px;
+    z-index: 2;
+    &--modifier{
+        border-radius: 100px 100px 0px 0px;
+        position:relative;
+    }
     &__titre{
         @extend .fonctionnement__titre;
+        font-size: 70px;
+        padding-bottom:0px;
+        &__h2{
+            padding: 100px 0px 50px 40px;
+            font-weight: 300;
+            font-size: 30px;
+        }
+        &__h1{
+            margin-top:550px;
+            font-family:$police-logo-titre;
+        }
     }
     &__grid{
         padding-inline: 40px;
@@ -15,6 +31,13 @@
         grid-template-rows: 400px;
         border-radius: $radius-cards;
         box-shadow: 5px 5px 20px $gris-ombre;
+        &--modifier{
+            display:grid;
+            grid-template-rows: 90px 90px;
+            align-items: center;
+            border-radius: $radius-cards;
+            box-shadow: 5px 5px 20px $gris-ombre;
+        }
     }
 }
 .cards{
@@ -30,12 +53,16 @@
         display:grid;
         grid-template-columns: auto auto;
         row-gap: 5px;
+        &--modifier{
+        grid-template-columns: auto 15%;
+        }
     }
 }
 .description{
     display:grid;
     padding-left: 20px;
     &__nom{
+        font-size: 20px;
         font-weight: 600;
         grid-column: 1;
         padding-top: 20px;
@@ -48,5 +75,14 @@
         grid-column: 2;
         grid-row-start: 1;
         grid-row-end: 2;
+    }
+    &__ingrédient{
+        font-size: 15px;
+        grid-column: 1;
+    }
+    &__prix{
+        grid-column: 2;
+        grid-row: 2;
+        font-weight: 600;
     }
 }

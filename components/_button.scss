@@ -1,0 +1,17 @@
+.header{
+    &__bouton{
+        background: linear-gradient(350deg,$couleur-primaire,$couleur-secondaire);
+        color:white;
+        font-size: 35px;
+        padding:35px;
+        width:fit-content;
+        border-radius: 55px;
+        margin-bottom:50px;
+        box-shadow: 5px 5px 20px $gris-ombre;
+        border:none;
+        &--modifier{
+            padding-inline:100px;
+            margin-top: 100px;
+        }
+    }
+}
