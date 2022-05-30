@@ -1,6 +1,48 @@
+.fonctionnement{
+    background-color: white;
+    &__liste{
+        @extend .header;
+        background-color: white;
+        flex-direction: column;
+        gap:50px;
+        padding-inline: 30px;
+        padding-bottom: 50px;
+    }
+    &__numero{
+        display: flex;
+        aspect-ratio: 1/1;
+        width:25px;
+        background-color: $couleur-primaire;
+        border-radius: 25px;
+        justify-content: center;
+        align-items: center;
+        color:white;margin:-10px;
+    }
+    &__element{
+        @extend .header;
+        justify-content: start;
+        align-items: center;
+        font-weight:500;
+        width:100%;
+        height:75px;
+        box-shadow: 5px 5px 20px $gris-ombre;
+        border-radius: 20px;
+        cursor:pointer;
+        &--troisieme{
+            background-color: $couleur-hover;
+        }
+    }
+    &__icon{
+        color:grey;
+        padding-inline: 30px;
+        &--troisieme{
+            color:$couleur-primaire;
+        }
+    }
+}
 .container{
     background-color: $gris-menu;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     z-index: 2;
     &--modifier{
         border-radius: 100px 100px 0px 0px;
@@ -8,12 +50,10 @@
     }
     &__titre{
         @extend .fonctionnement__titre;
-        font-size: 70px;
-        padding-bottom:0px;
+        padding-bottom:20px;
         &__h2{
             padding: 100px 0px 50px 40px;
             font-weight: 300;
-            font-size: 30px;
         }
         &__h1{
             margin-top:550px;
@@ -21,14 +61,12 @@
         }
     }
     &__grid{
-        padding-inline: 40px;
         display:grid;
+        padding-inline: 40px;
         grid-template-columns: auto;
         gap:40px;
     }
     &__cards{
-        display:grid;
-        grid-template-rows: 400px;
         border-radius: $radius-cards;
         box-shadow: 5px 5px 20px $gris-ombre;
         &--modifier{
@@ -41,43 +79,36 @@
     }
 }
 .cards{
+    &__nouveau{
+        position:absolute;
+    }
     &__image{
         border-radius: $radius-cards $radius-cards 0px 0px;
         object-fit:cover;
         width:100%;
-        height:100%;
+        height:160px;
     }
     &__description{
-        align-self: center;
-        font-size:35px;
-        display:grid;
-        grid-template-columns: auto auto;
-        row-gap: 5px;
-        &--modifier{
-        grid-template-columns: auto 15%;
-        }
+        height:60px;
+        display:flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 20px 0px 10px;
     }
 }
 .description{
-    display:grid;
-    padding-left: 20px;
+    &__texte{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-block: 10px;
+    }
     &__nom{
-        font-size: 20px;
         font-weight: 600;
-        grid-column: 1;
-        padding-top: 20px;
-    }
-    &__ville{
-        grid-column: 1;
-        padding-bottom: 20px;
-    }
-    &__icon{
-        grid-column: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
     }
     &__ingrédient{
-        font-size: 15px;
         grid-column: 1;
     }
     &__prix{
@@ -85,4 +116,8 @@
         grid-row: 2;
         font-weight: 600;
     }
+}
+
+.description>*{
+    flex:1 1 50%;
 }

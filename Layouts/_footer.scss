@@ -1,24 +1,23 @@
 .footer{
-    padding-block: 50px;
+    padding-block: 25px;
     background-color: $couleur-footer;
     color:white;
-    padding-left:50px;
-    font-size: 30px;
+    padding-left:15px;
     &__titre{
         font-family: $police-logo-titre;
-        padding-bottom:50px;
+        padding-bottom:15px;
     }
     &__liste{
-        row-gap:50px;
+        row-gap:5px;
         padding:0px;
     }
     &__element{
-        line-height:50px;
+        line-height:22px;
     }
     &__icon{
-        padding-right:18px;
+        padding-right:6px;
         &--premier{
-            padding-right:30px;
+            padding-right:12px;
         }
     }
 }

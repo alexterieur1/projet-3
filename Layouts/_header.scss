@@ -11,58 +11,47 @@ a{
         color:black;
     }
 }
+header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
 .header{
+    &__titre{
+        width:50%;
+    }
+    &__location{
+        @extend .header;
+        width:100%;
+        padding-block: 20px;
+        gap: 10px;
+        background-color: $gris-localisation;
+    }
     &__reservation{
+        width:100%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
         gap:20px;
         padding-top: 50px;
         flex-direction: column;
         background-color: $gris-menu;
-        align-items: center;
     }
     &__h1{
-        font-size: 45px;
-        /*padding-inline: 20%;*/
+        text-align: center;
+        font-size: 25px;
+        padding-inline: 25px;
+        width:350px;
     }
     &__h2{
-        font-size: 35px;
+        text-align: center;
+        font-size: 17px;
+        width:300px;
         font-weight: 300;
-        /*padding-inline: 10%;*/
     }
     &__image{
         position:absolute;
         width:100%;
         z-index: 1;
-    }
-}
-.navigation{
-    @extend .header;
-    font-size: 30px;
-    padding-block: 20px;
-    gap: 10px;
-    background-color: $gris-localisation;
-}
-.fonctionnement{
-    &__liste{
-        @extend .header;
-        flex-direction: column;
-        gap:50px;
-        padding-inline: 50px;
-        padding-bottom: 100px;
-    }
-    &__element{
-        @extend .header;
-        justify-content: start;
-        font-size:35px;
-        font-weight:500;
-        width:100%;
-        box-shadow: 5px 5px 20px $gris-ombre;
-        padding:50px 0px 50px 20px;
-        border-radius: 35px;
-        &:hover{
-            background-color: $couleur-hover;
-        }
-    }
-    &__icon{
-        padding-inline: 40px;
     }
 }
