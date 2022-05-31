@@ -41,46 +41,67 @@
     }
 }
 .container{
+    display: flex;
+    flex-direction: column;
     background-color: $gris-menu;
     padding-bottom: 50px;
-    z-index: 2;
     &--modifier{
-        border-radius: 100px 100px 0px 0px;
         position:relative;
+        border-radius: 50px 50px 0px 0px;
+        margin-top:-50px;
     }
     &__titre{
         @extend .fonctionnement__titre;
-        padding-bottom:20px;
+        padding-bottom:0px;
         &__h2{
-            padding: 100px 0px 50px 40px;
+            padding: 40px 0px 5px 20px;
             font-weight: 300;
+            font-size: 18px;
         }
         &__h1{
-            margin-top:550px;
             font-family:$police-logo-titre;
         }
     }
+    &__ligne{
+        background-color: $couleur-tertiaire;
+        height:3px;
+        width:45px;
+        margin:0px 0px 15px 20px;
+    }
     &__grid{
         display:grid;
-        padding-inline: 40px;
+        padding-inline: 20px;
         grid-template-columns: auto;
         gap:40px;
     }
     &__cards{
         border-radius: $radius-cards;
         box-shadow: 5px 5px 20px $gris-ombre;
+        position:relative;
         &--modifier{
-            display:grid;
-            grid-template-rows: 90px 90px;
+            display:flex;
+            flex-direction:row;
             align-items: center;
+            justify-content: space-between;
             border-radius: $radius-cards;
             box-shadow: 5px 5px 20px $gris-ombre;
         }
+    }
+    &__description{
+        padding:10px 0px 10px 10px;
+        gap:2px;
+        display:flex;
+        flex-direction:column;
     }
 }
 .cards{
     &__nouveau{
         position:absolute;
+        padding:5px;
+        border-radius: 3px;
+        background:$couleur-tertiaire;
+        top:15px;
+        right:15px;
     }
     &__image{
         border-radius: $radius-cards $radius-cards 0px 0px;
@@ -108,16 +129,11 @@
     &__nom{
         font-weight: 600;
     }
-    &__ingrédient{
-        grid-column: 1;
-    }
     &__prix{
-        grid-column: 2;
-        grid-row: 2;
+        display:flex;
+        align-items: flex-end;
+        height:100%;
         font-weight: 600;
+        padding: 0px 20px 10px 0px;
     }
-}
-
-.description>*{
-    flex:1 1 50%;
 }

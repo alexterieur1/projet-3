@@ -7,9 +7,7 @@
 }
 a{
     text-decoration:none;
-    &:visited{
-        color:black;
-    }
+    color:black;
 }
 header{
     display:flex;
@@ -17,8 +15,20 @@ header{
     align-items: center;
 }
 .header{
+    &__bandetitre{
+        display:flex;
+        align-items: center;
+        justify-content: start;
+        gap:30px;
+        width: 100%;
+    }
+    &__icon{
+        font-size: 22px;
+        margin:20px;
+    }
     &__titre{
         width:50%;
+        padding-block: 10px;
     }
     &__location{
         @extend .header;
@@ -50,8 +60,6 @@ header{
         font-weight: 300;
     }
     &__image{
-        position:absolute;
         width:100%;
-        z-index: 1;
     }
 }
