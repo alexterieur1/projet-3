@@ -50,29 +50,36 @@
         border-radius: 50px 50px 0px 0px;
         margin-top:-50px;
     }
+    &__titreprincipal{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
     &__titre{
         @extend .fonctionnement__titre;
-        padding-bottom:0px;
+        padding-bottom: 20px;
         &__h2{
-            padding: 40px 0px 5px 20px;
+            padding: 40px 0px 4px 20px;
             font-weight: 300;
-            font-size: 18px;
+            font-size: 16px;
         }
         &__h1{
             font-family:$police-logo-titre;
+            font-size: 28px;
         }
     }
     &__ligne{
         background-color: $couleur-tertiaire;
         height:3px;
-        width:45px;
+        width:40px;
         margin:0px 0px 15px 20px;
     }
     &__grid{
         display:grid;
         padding-inline: 20px;
         grid-template-columns: auto;
-        gap:40px;
+        gap:20px;
     }
     &__cards{
         border-radius: $radius-cards;
@@ -83,7 +90,7 @@
             flex-direction:row;
             align-items: center;
             justify-content: space-between;
-            border-radius: $radius-cards;
+            border-radius:15px;
             box-shadow: 5px 5px 20px $gris-ombre;
         }
     }
@@ -97,11 +104,14 @@
 .cards{
     &__nouveau{
         position:absolute;
-        padding:5px;
+        font-size: 12px;
+        font-weight: 500;
+        padding:7px;
         border-radius: 3px;
-        background:$couleur-tertiaire;
+        background:#8ADDC6;
         top:15px;
         right:15px;
+        color:#157653;
     }
     &__image{
         border-radius: $radius-cards $radius-cards 0px 0px;
@@ -126,6 +136,9 @@
         justify-content: space-around;
         padding-block: 10px;
     }
+    &__ingrédient{
+        font-size: 14px;
+    }
     &__nom{
         font-weight: 600;
     }
@@ -135,5 +148,11 @@
         height:100%;
         font-weight: 600;
         padding: 0px 20px 10px 0px;
+    }
+    &__icon--titre{
+        margin-top:40px;
+        margin-right: 30px;
+        height: 44px;
+        width:25px;
     }
 }
