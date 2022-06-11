@@ -205,12 +205,14 @@ header {
           flex-direction: column;
   background-color: #F4F4F4;
   padding-bottom: 50px;
+  z-index: 100000001;
 }
 
 .container--modifier {
   position: relative;
   border-radius: 50px 50px 0px 0px;
   margin-top: -50px;
+  z-index: 10;
 }
 
 .container__titreprincipal {
@@ -237,6 +239,10 @@ header {
   padding: 40px 0px 4px 20px;
   font-weight: 300;
   font-size: 16px;
+  -webkit-animation: 1000ms ease-out 1000ms 1 affichage_recette;
+          animation: 1000ms ease-out 1000ms 1 affichage_recette;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 .container__titre__h1 {
@@ -284,6 +290,29 @@ header {
   border-radius: 15px;
   -webkit-box-shadow: 5px 5px 20px #cdcdcd;
           box-shadow: 5px 5px 20px #cdcdcd;
+  cursor: pointer;
+  -webkit-animation: 1000ms ease-out 1000ms 1 affichage_recette;
+          animation: 1000ms ease-out 1000ms 1 affichage_recette;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+.container__cards--modifier:hover > .description__animation, .container__cards--modifier:hover > .description__prix {
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-transform: translate(-30px);
+          transform: translate(-30px);
+}
+
+.container__cards--modifier:hover > .description__icon--animation {
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .container__description {
@@ -369,6 +398,10 @@ header {
   height: 100%;
   font-weight: 600;
   padding: 0px 20px 10px 0px;
+  -webkit-transition: -webkit-transform 700ms ease-in;
+  transition: -webkit-transform 700ms ease-in;
+  transition: transform 700ms ease-in;
+  transition: transform 700ms ease-in, -webkit-transform 700ms ease-in;
 }
 
 .description__icon--titre {
@@ -376,6 +409,77 @@ header {
   margin-right: 30px;
   height: 44px;
   width: 25px;
+}
+
+.description__icon--animation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  aspect-ratio: 1/1;
+  height: 25px;
+  border-radius: 25px;
+  color: #99E2D0;
+  z-index: 10;
+  -webkit-transition: -webkit-transform 500ms 200ms ease-in;
+  transition: -webkit-transform 500ms 200ms ease-in;
+  transition: transform 500ms 200ms ease-in;
+  transition: transform 500ms 200ms ease-in, -webkit-transform 500ms 200ms ease-in;
+}
+
+.description__animation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  height: 60px;
+  right: 20px;
+  width: 60px;
+  margin-right: -30px;
+  background-color: #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  -webkit-transition: -webkit-transform 700ms ease-in;
+  transition: -webkit-transform 700ms ease-in;
+  transition: transform 700ms ease-in;
+  transition: transform 700ms ease-in, -webkit-transform 700ms ease-in;
+  -webkit-transform: scaleX(0.1);
+          transform: scaleX(0.1);
+  z-index: 1;
+  opacity: 1;
+}
+
+@-webkit-keyframes affichage_recette {
+  0% {
+    margin-top: 20px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+@keyframes affichage_recette {
+  0% {
+    margin-top: 20px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
 }
 
 .footer {
