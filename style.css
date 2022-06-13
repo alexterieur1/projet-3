@@ -515,13 +515,6 @@ header {
   margin-left: auto;
 }
 
-.description__icon--titre {
-  margin-top: 40px;
-  margin-right: 30px;
-  height: 44px;
-  width: 25px;
-}
-
 .description__icon--animation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -614,25 +607,109 @@ header {
   }
 }
 
-@-webkit-keyframes glissade {
+/*
+@keyframes glissade{
+    0%{
+        transform:translate(40px,0px);
+    }
+    100%{
+        transform:translate(0px);
+    }
+}*/
+.coeur__contenu {
+  fill: transparent;
+  stroke: black;
+  stroke-width: 35;
+  cursor: pointer;
+  position: relative;
+}
+
+.coeur__contenu svg {
+  overflow: visible;
+  width: 24px;
+}
+
+.coeur__contenu path {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 1550;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.coeur__contenu .coeur__fond {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  stroke: none;
+}
+
+.coeur__contenu .coeur__principal--titre {
+  margin: 40px 30px 20px 0px;
+}
+
+.coeur__contenu .coeur__principal:hover path {
+  -webkit-animation: animation 2s ease-in-out forwards;
+          animation: animation 2s ease-in-out forwards;
+}
+
+@-webkit-keyframes animation {
   0% {
-    -webkit-transform: translate(40px, 0px);
-            transform: translate(40px, 0px);
+    stroke-dashoffset: 0;
+  }
+  30% {
+    stroke-dashoffset: 1550;
+  }
+  60% {
+    stroke-dashoffset: 3100;
+    fill: transparent;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  80% {
+    fill: #FF79DA;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    stroke: #FF79DA;
   }
   100% {
-    -webkit-transform: translate(0px);
-            transform: translate(0px);
+    stroke-dashoffset: 3100;
+    fill: #FF79DA;
+    stroke: #FF79DA;
   }
 }
 
-@keyframes glissade {
+@keyframes animation {
   0% {
-    -webkit-transform: translate(40px, 0px);
-            transform: translate(40px, 0px);
+    stroke-dashoffset: 0;
+  }
+  30% {
+    stroke-dashoffset: 1550;
+  }
+  60% {
+    stroke-dashoffset: 3100;
+    fill: transparent;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  80% {
+    fill: #FF79DA;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    stroke: #FF79DA;
   }
   100% {
-    -webkit-transform: translate(0px);
-            transform: translate(0px);
+    stroke-dashoffset: 3100;
+    fill: #FF79DA;
+    stroke: #FF79DA;
   }
 }
 
