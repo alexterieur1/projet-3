@@ -1,0 +1,52 @@
+
+.description{
+    &__texte{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-block: 10px;
+    }
+    &__ingrédient{
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    &__nom{
+        font-weight: 600;
+    }
+    &__prix{
+        display:flex;
+        align-items: flex-end;
+        height:100%;
+        font-weight: 600;
+        padding: 0px 20px 10px 0px;
+        transition: transform 700ms ease-in;
+        margin-left:auto;
+    }
+    &__icon--animation{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        aspect-ratio: 1/1;
+        height:25px;
+        border-radius: 25px;
+        color: $couleur-tertiaire;
+        z-index: 10;/*
+        transition:transform 500ms ease-in;
+        transform:rotate(90deg);
+        animation-fill-mode: none;*/
+    }
+    &__animation{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height:60px;
+        right:20px;
+        width:0px;
+        background-color: $couleur-tertiaire;
+        border-radius: 0px 15px 15px 0px;
+        transition: width 500ms ease-in, transform 500ms ease-in;
+        overflow: hidden;
+    }
+}

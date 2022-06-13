@@ -7,11 +7,16 @@
         "utils/_mixins.scss",
         "utils/_extensions.scss",
         "base/_base.scss",
+        "base/_police.scss",
         "components/_button.scss",
+        "components/_coeur.scss",
+        "layouts/_carte.scss",
         "layouts/_chargement.scss",
-        "layouts/_header.scss",
         "Layouts/_container.scss",
-        "Layouts/_footer.scss"
+        "Layouts/_description.scss",
+        "Layouts/_footer.scss",
+        "layouts/_header.scss",
+        "pages/_fonctionnement.scss"
     ],
     "names": [],
     "file": "style.css"

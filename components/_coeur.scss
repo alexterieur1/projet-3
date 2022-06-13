@@ -1,0 +1,64 @@
+.coeur__contenu{
+    fill: transparent;
+    stroke: black;
+    stroke-width: 35;
+    cursor: pointer;
+    position: relative;
+
+    svg {
+        overflow: visible;
+        width: 24px;
+    }
+  
+    path {
+        stroke-dashoffset:0;
+        stroke-dasharray: 1550;
+        transform-origin: center;
+    }
+  
+    .coeur{
+        &__fond{
+            position: absolute;
+            left: 0;
+            right: 0;
+            z-index: -1;
+            stroke: none;
+        }
+        &__principal{
+            &--titre{
+                margin:40px 30px 20px 0px;
+            }
+        }
+    }
+  
+    .coeur__principal:hover path {
+        animation: animation 2s ease-in-out forwards;
+    }
+}
+  
+  @keyframes animation {
+    0% {
+        stroke-dashoffset: 0;
+    }
+    30% {
+        stroke-dashoffset: 1550;
+    }
+    60% {
+        stroke-dashoffset: 3100;
+        fill: transparent;
+        transform: scale(1);
+    }
+    80% {
+        fill:$couleur-secondaire;
+        transform: scale(1.1);
+    }
+    90% {
+        transform: scale(1);
+        stroke:$couleur-secondaire;
+    }
+    100% {
+        stroke-dashoffset: 3100;
+        fill:$couleur-secondaire;
+        stroke:$couleur-secondaire;
+    }
+  }

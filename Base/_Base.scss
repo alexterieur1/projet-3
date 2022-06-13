@@ -1,2 +1,10 @@
-$police-logo-titre:shrikhand;
-$police-texte:roboto;
+*{
+    font-family: $police-texte;
+    box-sizing: border-box;
+    margin: 0;
+    list-style-type:none;
+}
+a{
+    text-decoration:none;
+    color:black;
+}
