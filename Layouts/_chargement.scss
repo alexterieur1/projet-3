@@ -1,24 +1,23 @@
 .chargement{
-    position:absolute;
+    position:fixed;
     top:0px;
     bottom:0px;
     right:0px;
     left:0px;
-    /*background-color: white;
+    background-color: white;
     z-index: 100;
-    animation: 1ms ease-out 3000ms 1 fond_blanc;*/
+    animation: 1ms ease-out $duree-animation 1 fond_blanc;
     animation-fill-mode: both;
-    display:flex;
+    display:none;
     flex-direction:row;
     justify-content: center;
+    align-items: center;
     gap:20px;
-    padding-top:100%;
-    overflow:hidden;/*
     &__cercle{        
         aspect-ratio: 1/1;
         height:16px;
         border-radius: 8px;
-        animation: rebond 500ms ease-out 0ms 2;
+        animation: rebond 500ms ease-out 2;
         animation-direction: alternate;
         &--1{
             background-color: $couleur-primaire;
@@ -38,7 +37,7 @@
 @keyframes fond_blanc{
     100%{
         translate: 100%;
-        display:none;
+        visibility:0;
     }
 }
 
@@ -51,5 +50,5 @@
     }
     100%{
         transform:translate(0px,-50px) scale(1.1,0.9);
-    }*/
+    }
 }
