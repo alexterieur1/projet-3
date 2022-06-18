@@ -1,7 +1,6 @@
 .coeur__contenu{
-    fill: transparent;
     stroke: black;
-    stroke-width: 35;
+    stroke-width: 25px;
     cursor: pointer;
     position: relative;
 
@@ -17,13 +16,6 @@
     }
   
     .coeur{
-        &__fond{
-            position: absolute;
-            left: 0;
-            right: 0;
-            z-index: -1;
-            stroke: none;
-        }
         &__principal{
             &--titre{
                 margin:40px 30px 20px 0px;
@@ -32,33 +24,55 @@
     }
   
     .coeur__principal:hover path {
-        animation: animation 2s ease-in-out forwards;
+        animation: contour 2s ease-in-out forwards;
     }
 }
+.stop{
+    &1{
+            stop-color: $couleur-secondaire;
+        }
+        &2{
+            stop-color:$couleur-primaire;
+        }
+}
   
-  @keyframes animation {
-    0% {
-        stroke-dashoffset: 0;
+  @keyframes contour {
+    0%{
+        fill:#F4F4F4;
     }
     30% {
         stroke-dashoffset: 1550;
     }
     60% {
         stroke-dashoffset: 3100;
-        fill: transparent;
-        transform: scale(1);
     }
     80% {
-        fill:$couleur-secondaire;
         transform: scale(1.1);
+        stroke-dashoffset: 3100;
+        fill:#F4F4F4;
     }
     90% {
         transform: scale(1);
-        stroke:$couleur-secondaire;
     }
     100% {
-        stroke-dashoffset: 3100;
-        fill:$couleur-secondaire;
-        stroke:$couleur-secondaire;
+        stroke-dashoffset: 1550;
+    }
+  }
+
+  @keyframes couleur_secondaire{
+    90%{
+        stop-color:$couleur-secondaire;
+    }
+    100%{
+        stop-color: $couleur-secondaire;
+    }
+  }
+
+  @keyframes couleur_primaire{
+    90%{
+        stop-color:$couleur-primaire;
+    }
+    100%{
+        stop-color: $couleur-primaire;
     }
   }

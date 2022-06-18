@@ -1,9 +1,15 @@
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./utils/extensions";
+@import "./base/police";
 @import "./base/base";
 @import "./components/button";
+@import "./components/coeur";
+@import "./layouts/carte";
 @import "./layouts/chargement";
+@import "./layouts/container";
+@import "./layouts/description";
 @import "./layouts/header";
 @import "./Layouts/container";
 @import "./Layouts/footer";
+@import "./pages/fonctionnement"

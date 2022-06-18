@@ -23,10 +23,13 @@
                     <h1 class="container__titre container__titre__h1">À la française</h1>
                     <div class="coeur__contenu">
                         <svg class="coeur__principal coeur__principal--titre" viewBox="0 0 512 512" width="100" title="coeur">
-                          <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
-                        </svg>
-                        <svg class="coeur__fond coeur__fond--titre" viewBox="0 0 512 512" width="100" title="coeur">
-                          <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+                            <defs>
+                                <linearGradient id="degrade_couleur" x1="20%" y1="20%" x2="120%" y2="120%">
+                                    <stop class="stop1" offset="0%"/>
+                                    <stop class="stop2" offset="100%"/>
+                                </linearGradient>
+                            </defs>
+                            <path fill="url(#degrade_couleur)" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
                         </svg>
                       </div>
                 </div>
@@ -35,7 +38,7 @@
                     <div class="container__cards--modifier container__cards--modifier--1">
                         <div class="container__description">
                             <div class="description__nom">Tartare de poulpe acidulé</div>
-                            <div class="description__ingrédient">Aux zests d'orange</div>
+                            <div class="description__ingredient">Aux zests d'orange</div>
                         </div>
                         <div class="description__prix">25€</div>
                         <div class="description__animation">
@@ -45,7 +48,7 @@
                     <div class="container__cards--modifier container__cards--modifier--2">
                         <div class="container__description">
                             <div class="description__nom">Velouté de légumes d'antan</div>
-                            <div class="description__ingrédient">Carotte, panais, topinambour</div>
+                            <div class="description__ingredient">Carotte, panais, topinambour</div>
                         </div>
                         <div class="description__prix">35€</div>
                         <div class="description__animation">
@@ -55,7 +58,7 @@
                     <div class="container__cards--modifier container__cards--modifier--3">
                         <div class="container__description">
                             <div class="description__nom">Soupe à l'oignon</div>
-                            <div class="description__ingrédient">Revisitée</div>
+                            <div class="description__ingredient">Revisitée</div>
                         </div>
                         <div class="description__prix">20€</div>
                         <div class="description__animation">
@@ -68,7 +71,7 @@
                     <div class="container__cards--modifier container__cards--modifier--1">
                         <div class="container__description">
                             <div class="description description__nom">Coquilles Saint-Jacques</div>
-                            <div class="description description__ingrédient">Accompagnées d'une purée de panais</div>
+                            <div class="description description__ingredient">Accompagnées d'une purée de panais</div>
                         </div>
                         <div class="description description__prix">40€</div>
                         <div class="description__animation">
@@ -78,7 +81,7 @@
                     <div class="container__cards--modifier container__cards--modifier--2">
                         <div class="container__description">
                             <div class="description description__nom">Magret de canard</div>
-                            <div class="description description__ingrédient">Et parmentier de pommes de terres</div>
+                            <div class="description description__ingredient">Et parmentier de pommes de terres</div>
                         </div>
                         <div class="description description__prix">35€</div>
                         <div class="description__animation">
@@ -88,7 +91,7 @@
                     <div class="container__cards--modifier container__cards--modifier--3">
                         <div class="container__description">
                             <div class="description description__nom">Pigeonneau d'Ille-et-vilaine</div>
-                            <div class="description description__ingrédient">Sur son lit de gnocchis aux légumes</div>
+                            <div class="description description__ingredient">Sur son lit de gnocchis aux légumes</div>
                         </div>
                         <div class="description description__prix">44€</div>
                         <div class="description__animation">
@@ -101,7 +104,7 @@
                     <div class="container__cards--modifier container__cards--modifier--1">
                         <div class="container__description">
                             <div class="description description__nom">Pétales de vilettes glacés</div>
-                            <div class="description description__ingrédient">Et purée de noisettes</div>
+                            <div class="description description__ingredient">Et purée de noisettes</div>
                         </div>
                         <div class="description description__prix">18€</div>
                         <div class="description__animation">
@@ -111,7 +114,7 @@
                     <div class="container__cards--modifier container__cards--modifier--2">
                         <div class="container__description">
                             <div class="description description__nom">Fondant au chocolat</div>
-                            <div class="description description__ingrédient">Revisité</div>
+                            <div class="description description__ingredient">Revisité</div>
                         </div>
                         <div class="description description__prix">22€</div>
                         <div class="description__animation">
@@ -121,7 +124,7 @@
                     <div class="container__cards--modifier container__cards--modifier--3">
                         <div class="container__description">
                             <div class="description description__nom">Millfeuille croustillant</div>
-                            <div class="description description__ingrédient">Myrtilles et pâte d'amande</div>
+                            <div class="description description__ingredient">Myrtilles et pâte d'amande</div>
                         </div>
                         <div class="description description__prix">23€</div>
                         <div class="description__animation">
