@@ -56,3 +56,13 @@ header{
         height:254px;
     }
 }
+@media (min-width:$tablette){
+    .header{
+        &__titre{
+            max-width: 500px;
+        }
+        &__icon{
+            left:-90px;
+        }
+    }
+}

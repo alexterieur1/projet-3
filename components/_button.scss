@@ -1,18 +1,21 @@
-.header{
-    &__bouton{
-        background: linear-gradient(350deg,$couleur-primaire,$couleur-secondaire);
-        color:white;
-        padding:15px;
-        border-radius: 55px;
-        margin-bottom:50px;
-        box-shadow: 5px 5px 20px $gris-ombre;
-        border:none;
-        cursor:pointer;
-        &--modifier{
-            font-weight: 500;
-            padding-inline:50px;
-            margin:50px auto 0px auto;
-            width:fit-content;
-        }
+.bouton{
+    background: linear-gradient(350deg,$couleur-primaire,$couleur-secondaire);
+    color:white;
+    padding:15px;
+    border-radius: 55px;
+    margin-bottom:50px;
+    box-shadow: 5px 5px 20px $gris-ombre;
+    border:none;
+    cursor:pointer;
+    &--modifier{
+        font-weight: 500;
+        padding-inline:50px;
+        margin:50px auto 0px auto;
+        width:fit-content;
+    }
+}
+@media (min-width:$tablette){
+    .bouton{
+        scale: 1.2;
     }
 }

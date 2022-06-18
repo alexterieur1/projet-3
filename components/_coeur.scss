@@ -76,3 +76,19 @@
         stop-color: $couleur-primaire;
     }
   }
+
+@media (min-width:768px){
+    .coeur__contenu{
+        svg {
+            overflow: visible;
+            width: 30px;
+        }
+        .coeur{
+            &__principal{
+                &--titre{
+                    margin:40px 60px 20px 0px;
+                }
+            }
+        }
+    }
+}

@@ -39,6 +39,7 @@
         &__h1{
             font-family:$police-logo-titre;
             font-size: 28px;
+            padding-left: 60px;
         }
     }
     &__grid{
@@ -112,3 +113,36 @@
         transform:translate(0px);
     }
 }*/
+
+@media (min-width:$tablette){
+    .container{
+        &__grid{
+            grid-template-columns: auto auto;
+            &--recette{
+                grid-template-columns: auto;
+            }
+        }
+    }
+}
+@media (min-width:$ordinateur){
+    .container{
+        &__grid{
+            grid-template-columns: auto auto auto;
+            &--modifier{
+            max-width:400px;
+            margin:0 auto;
+            }
+        &--recette{
+                grid-template-columns: auto;
+            }
+        }
+        &__titre__h2{
+            width:400px;
+            margin:0 auto;
+        }
+        &__titreprincipal{
+            width: 1250px;
+            margin:0 auto;
+        }
+    }
+}
