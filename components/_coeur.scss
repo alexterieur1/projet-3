@@ -23,7 +23,7 @@
         }
     }
   
-    .coeur__principal:hover path {
+    .coeur__principal:active path {
         animation: contour 2s ease-in-out forwards;
     }
 }
@@ -85,6 +85,9 @@
         }
         .coeur{
             &__principal{
+                &:hover path{
+                        animation: contour 2s ease-in-out forwards;
+                }
                 &--titre{
                     margin:40px 60px 20px 0px;
                 }

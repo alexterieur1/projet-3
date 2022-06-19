@@ -59,7 +59,7 @@ header{
 @media (min-width:$tablette){
     .header{
         &__titre{
-            max-width: 500px;
+            max-width: 400px;
         }
         &__icon{
             left:-90px;

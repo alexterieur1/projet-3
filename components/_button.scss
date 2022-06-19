@@ -1,5 +1,5 @@
 .bouton{
-    background: linear-gradient(350deg,$couleur-primaire,$couleur-secondaire);
+    background:linear-gradient(350deg,$couleur-primaire,$couleur-secondaire);
     color:white;
     padding:15px;
     border-radius: 55px;
@@ -7,7 +7,11 @@
     box-shadow: 5px 5px 20px $gris-ombre;
     border:none;
     cursor:pointer;
-    &--modifier{
+    &:hover{
+        background:linear-gradient(350deg,lighten($couleur-primaire,5%),lighten($couleur-secondaire,5%));
+        box-shadow: 5px 5px 20px darken($gris-ombre,5%);
+    }
+    &--menu{
         font-weight: 500;
         padding-inline:50px;
         margin:50px auto 0px auto;

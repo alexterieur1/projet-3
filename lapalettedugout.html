@@ -23,77 +23,84 @@
                 </div>
                 <img class="header__image" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="image du restaurant">
             </header>
-            <div class="container container--modifier">
-                <div class="container__titreprincipal">
-                    <h1 class="container__titre container__titre__h1">La palette du goût</h1>
+            <div class="corps corps--menu">
+                <div class="corps__titreprincipal">
+                    <h1 class="corps__titre corps__titre__h1">La palette du goût</h1>
                     <div class="coeur__contenu">
                         <svg class="coeur__principal coeur__principal--titre" viewBox="0 0 512 512" width="100" title="coeur">
-                          <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+                            <defs>
+                                <linearGradient id="degrade_couleur" x1="20%" y1="20%" x2="120%" y2="120%">
+                                    <stop class="stop1" offset="0%"/>
+                                    <stop class="stop2" offset="100%"/>
+                                </linearGradient>
+                            </defs>
+                            <path fill="url(#degrade_couleur)" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
                         </svg>
-                        <svg class="coeur__fond coeur__fond--titre" viewBox="0 0 512 512" width="100" title="coeur">
-                          <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
-                        </svg>
-                      </div>           
-                </div>
-                <h2 class="container__titre__h2">entrées</h2>
-                <div class="container__grid">
-                    <div class="container__cards--modifier container__cards--modifier--1">
-                        <div class="container__description">
-                            <div class="description__nom">Fricassée d'escargot</div>
-                            <div class="description__ingredient">Au piment d'espelette</div>
-                        </div>
-                        <div class="description__prix">25€</div>
-                        <div class="description__animation">
-                            <i class="fa-solid fa-check description__icon--animation"></i>
-                        </div>
-                    </div>
-                    <div class="container__cards--modifier container__cards--modifier--2">
-                        <div class="container__description">
-                            <div class="description__nom">Foie gras de canard mi-cuit</div>
-                            <div class="description__ingredient">Et ses copeaux de truffe noire</div>
-                        </div>
-                        <div class="description__prix">35€</div>
-                        <div class="description__animation">
-                            <i class="fa-solid fa-check description__icon--animation"></i>
-                        </div>
-                    </div>
-                    <div class="container__cards--modifier container__cards--modifier--3">
-                        <div class="container__description">
-                            <div class="description__nom">oeuf au plat</div>
-                            <div class="description__ingredient">Assaisonné à la truffe sur lit de caviar</div>
-                        </div>
-                        <div class="description__prix">20€</div>
-                        <div class="description__animation">
-                            <i class="fa-solid fa-check description__icon--animation"></i>
-                        </div>
                     </div>
                 </div>
-                <h2 class="container__titre__h2">plats</h2>
-                <div class="container__grid">
-                    <div class="container__cards--modifier container__cards--modifier--1">
-                        <div class="container__description">
-                            <div class="description description__nom">Filet de boeuf aux herbes</div>
-                            <div class="description description__ingredient">Accompagné de sa ribambelle de légumes</div>
+                <div class="menu">
+                    <div>
+                    <h2 class="corps__titre__h2">entrées</h2>
+                    <div class="corps__grid corps__grid--recette">
+                        <div class="corps__cartes--menu corps__cartes--menu--1">
+                            <div class="corps__description">
+                                <div class="description__nom">Fricassé d'escargot</div>
+                                <div class="description__ingredient">Au piment d'Espelette</div>
+                            </div>
+                            <div class="description__prix">25€</div>
+                            <div class="description__animation">
+                                <i class="fa-solid fa-check description__icon--animation"></i>
+                            </div>
+                        </div>
+                        <div class="corps__cartes--menu corps__cartes--menu--2">
+                            <div class="corps__description">
+                                <div class="description__nom">Foie gras de canard mi-cuit</div>
+                                <div class="description__ingredient">Et ses copeaux de truffe noire</div>
+                            </div>
+                            <div class="description__prix">35€</div>
+                            <div class="description__animation">
+                                <i class="fa-solid fa-check description__icon--animation"></i>
+                            </div>
+                        </div>
+                        <div class="corps__cartes--menu corps__cartes--menu--3">
+                            <div class="corps__description">
+                                <div class="description__nom">oeuf au plat</div>
+                                <div class="description__ingredient">Assaisonné à la truffe sur le lit de caviar</div>
+                            </div>
+                            <div class="description__prix">20€</div>
+                            <div class="description__animation">
+                                <i class="fa-solid fa-check description__icon--animation"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                <h2 class="corps__titre__h2">plats</h2>
+                <div class="corps__grid corps__grid--recette">
+                    <div class="corps__cartes--menu corps__cartes--menu--1">
+                        <div class="corps__description">
+                            <div class="description description__nom">Filet de boeuf</div>
+                            <div class="description description__ingredient">Accompagnées de sa ribambelle de légumes</div>
                         </div>
                         <div class="description description__prix">40€</div>
                         <div class="description__animation">
                             <i class="fa-solid fa-check description__icon--animation"></i>
                         </div>
                     </div>
-                    <div class="container__cards--modifier container__cards--modifier--2">
-                        <div class="container__description">
+                    <div class="corps__cartes--menu corps__cartes--menu--2">
+                        <div class="corps__description">
                             <div class="description description__nom">Parmentier de queue de boeuf</div>
-                            <div class="description description__ingredient">À la truffe noire sur sa purée de panais</div>
+                            <div class="description description__ingredient">&Agrave; la truffe noire sur sa purée de panais</div>
                         </div>
                         <div class="description description__prix">35€</div>
                         <div class="description__animation">
                             <i class="fa-solid fa-check description__icon--animation"></i>
                         </div>
                     </div>
-                    <div class="container__cards--modifier container__cards--modifier--3">
-                        <div class="container__description">
+                    <div class="corps__cartes--menu corps__cartes--menu--3">
+                        <div class="corps__description">
                             <div class="description description__nom">Filet de turbot</div>
-                            <div class="description description__ingredient">Aux agrumes</div>
+                            <div class="description description__ingredient">aux agrumes</div>
                         </div>
                         <div class="description description__prix">44€</div>
                         <div class="description__animation">
@@ -101,21 +108,23 @@
                         </div>
                     </div>
                 </div>
-                <h2 class="container__titre__h2">desserts</h2>
-                <div class="container__grid">
-                    <div class="container__cards--modifier container__cards--modifier--1">
-                        <div class="container__description">
-                            <div class="description description__nom">Paris-Brest</div>
-                            <div class="description description__ingredient">Revisité</div>
+                </div>
+                <div>
+                <h2 class="corps__titre__h2">desserts</h2>
+                <div class="corps__grid corps__grid--recette">
+                    <div class="corps__cartes--menu corps__cartes--menu--1">
+                        <div class="corps__description">
+                            <div class="description description__nom">paris-Brest</div>
+                            <div class="description description__ingredient">Revistés</div>
                         </div>
                         <div class="description description__prix">18€</div>
                         <div class="description__animation">
                             <i class="fa-solid fa-check description__icon--animation"></i>
                         </div>
                     </div>
-                    <div class="container__cards--modifier container__cards--modifier--2">
-                        <div class="container__description">
-                            <div class="description description__nom">Macaron au chocolat d'exception</div>
+                    <div class="corps__cartes--menu corps__cartes--menu--2">
+                        <div class="corps__description">
+                            <div class="description description__nom">Macaron au choclat d'exception</div>
                             <div class="description description__ingredient">Et glace à la vanille de Madagascar</div>
                         </div>
                         <div class="description description__prix">22€</div>
@@ -123,9 +132,9 @@
                             <i class="fa-solid fa-check description__icon--animation"></i>
                         </div>
                     </div>
-                    <div class="container__cards--modifier container__cards--modifier--3">
-                        <div class="container__description">
-                            <div class="description description__nom">Mousse au chocolat</div>
+                    <div class="corps__cartes--menu corps__cartes--menu--3">
+                        <div class="corps__description">
+                            <div class="description description__nom">Mousse au choclat</div>
                             <div class="description description__ingredient">Au piment d'Espelette et à la truffe noire</div>
                         </div>
                         <div class="description description__prix">23€</div>
@@ -134,7 +143,9 @@
                         </div>
                     </div>
                 </div>
-                <button type="button" class="header__bouton header__bouton--modifier">Commander</button>
+                </div>
+                </div>
+                <button type="button" class="bouton bouton--menu">Commander</button>
             </div>
             <div class="footer">
                 <div class="footer__titre">ohmyfood</div>
@@ -150,7 +161,7 @@
                             <p>mentions légales</p>
                         </li>
                         <li class="footer__element">
-                            <p>Contact</p>
+                            <p><a href="mailto:contact&ohmyfood.com">Contact</a></p>
                         </li>
                     </ul>
                 </nav>

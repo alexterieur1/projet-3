@@ -13,61 +13,67 @@
         <body>
             <header>
                 <div class="header__bandetitre">
-                    <a href="/index.html"><i class="fa-solid fa-arrow-left header__icon"></i></a>
+                    <a href="/index.html"><i class="fa-solid fa-xl fa-arrow-left header__icon"></i></a>
                     <img class="header__titre" src="images/logo/ohmyfood.png" alt="logo">
                 </div>
                 <img class="header__image" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="image du restaurant">
             </header>
-            <div class="container container--modifier">
-                <div class="container__titreprincipal">
-                    <h1 class="container__titre container__titre__h1">Le délice des sens</h1>
+            <div class="corps corps--menu">
+                <div class="corps__titreprincipal">
+                    <h1 class="corps__titre corps__titre__h1">Le délice des sens</h1>
                     <div class="coeur__contenu">
                         <svg class="coeur__principal coeur__principal--titre" viewBox="0 0 512 512" width="100" title="coeur">
-                          <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
+                            <defs>
+                                <linearGradient id="degrade_couleur" x1="20%" y1="20%" x2="120%" y2="120%">
+                                    <stop class="stop1" offset="0%"/>
+                                    <stop class="stop2" offset="100%"/>
+                                </linearGradient>
+                            </defs>
+                            <path fill="url(#degrade_couleur)" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
                         </svg>
-                        <svg class="coeur__fond coeur__fond--titre" viewBox="0 0 512 512" width="100" title="coeur">
-                          <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
-                        </svg>
                     </div>
-              </div>
-              </div>
-                <h2 class="container__titre__h2">entrées</h2>
-                <div class="container__grid">
-                    <div class="container__cards--modifier container__cards--modifier--1">
-                        <div class="container__description">
-                            <div class="description__nom">Tartare de thon</div>
-                            <div class="description__ingredient">Assaisonné au yuzu</div>
+                </div>
+                <div class="menu">
+                    <div>
+                    <h2 class="corps__titre__h2">entrées</h2>
+                    <div class="corps__grid corps__grid--recette">
+                        <div class="corps__cartes--menu corps__cartes--menu--1">
+                            <div class="corps__description">
+                                <div class="description__nom">Tartare de thon</div>
+                                <div class="description__ingredient">Assaisonné au yuzu</div>
+                            </div>
+                            <div class="description__prix">25€</div>
+                            <div class="description__animation">
+                                <i class="fa-solid fa-check description__icon--animation"></i>
+                            </div>
                         </div>
-                        <div class="description__prix">25€</div>
-                        <div class="description__animation">
-                            <i class="fa-solid fa-check description__icon--animation"></i>
+                        <div class="corps__cartes--menu corps__cartes--menu--2">
+                            <div class="corps__description">
+                                <div class="description__nom">Bouchée de homard croustillant</div>
+                                <div class="description__ingredient">Et sa farandole de petits légumes</div>
+                            </div>
+                            <div class="description__prix">35€</div>
+                            <div class="description__animation">
+                                <i class="fa-solid fa-check description__icon--animation"></i>
+                            </div>
                         </div>
-                    </div>
-                    <div class="container__cards--modifier container__cards--modifier--2">
-                        <div class="container__description">
-                            <div class="description__nom">Bouchée de homard croustillant</div>
-                            <div class="description__ingredient">Et sa farandole de petits légumes</div>
-                        </div>
-                        <div class="description__prix">35€</div>
-                        <div class="description__animation">
-                            <i class="fa-solid fa-check description__icon--animation"></i>
-                        </div>
-                    </div>
-                    <div class="container__cards--modifier container__cards--modifier--3">
-                        <div class="container__description">
-                            <div class="description__nom">Velouté de cèpes</div>
-                            <div class="description__ingredient">Aux truffes</div>
-                        </div>
-                        <div class="description__prix">20€</div>
-                        <div class="description__animation">
-                            <i class="fa-solid fa-check description__icon--animation"></i>
+                        <div class="corps__cartes--menu corps__cartes--menu--3">
+                            <div class="corps__description">
+                                <div class="description__nom">Velouté de cèpes</div>
+                                <div class="description__ingredient">Aux truffes</div>
+                            </div>
+                            <div class="description__prix">20€</div>
+                            <div class="description__animation">
+                                <i class="fa-solid fa-check description__icon--animation"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <h2 class="container__titre__h2">plats</h2>
-                <div class="container__grid">
-                    <div class="container__cards--modifier container__cards--modifier--1">
-                        <div class="container__description">
+                <div>
+                <h2 class="corps__titre__h2">plats</h2>
+                <div class="corps__grid corps__grid--recette">
+                    <div class="corps__cartes--menu corps__cartes--menu--1">
+                        <div class="corps__description">
                             <div class="description description__nom">Poulet rôti aux herbes de Provence</div>
                             <div class="description description__ingredient">Et sa crème de truffe</div>
                         </div>
@@ -76,8 +82,8 @@
                             <i class="fa-solid fa-check description__icon--animation"></i>
                         </div>
                     </div>
-                    <div class="container__cards--modifier container__cards--modifier--2">
-                        <div class="container__description">
+                    <div class="corps__cartes--menu corps__cartes--menu--2">
+                        <div class="corps__description">
                             <div class="description description__nom">Langouste rôtie</div>
                             <div class="description description__ingredient">Et ses légumes de saison</div>
                         </div>
@@ -86,8 +92,8 @@
                             <i class="fa-solid fa-check description__icon--animation"></i>
                         </div>
                     </div>
-                    <div class="container__cards--modifier container__cards--modifier--3">
-                        <div class="container__description">
+                    <div class="corps__cartes--menu corps__cartes--menu--3">
+                        <div class="corps__description">
                             <div class="description description__nom">Côte de boeuf Angus</div>
                             <div class="description description__ingredient">Et sa purée de panais</div>
                         </div>
@@ -97,10 +103,12 @@
                         </div>
                     </div>
                 </div>
-                <h2 class="container__titre__h2">desserts</h2>
-                <div class="container__grid">
-                    <div class="container__cards--modifier container__cards--modifier--1">
-                        <div class="container__description">
+                </div>
+                <div>
+                <h2 class="corps__titre__h2">desserts</h2>
+                <div class="corps__grid corps__grid--recette">
+                    <div class="corps__cartes--menu corps__cartes--menu--1">
+                        <div class="corps__description">
                             <div class="description description__nom">Farandole de desserts</div>
                             <div class="description description__ingredient">Du chef</div>
                         </div>
@@ -109,20 +117,20 @@
                             <i class="fa-solid fa-check description__icon--animation"></i>
                         </div>
                     </div>
-                    <div class="container__cards--modifier container__cards--modifier--2">
-                        <div class="container__description">
+                    <div class="corps__cartes--menu corps__cartes--menu--2">
+                        <div class="corps__description">
                             <div class="description description__nom">Crème brulée</div>
-                            <div class="description description__ingredient">Revisitée</div>
+                            <div class="description description__ingredient">Revisités</div>
                         </div>
                         <div class="description description__prix">22€</div>
                         <div class="description__animation">
                             <i class="fa-solid fa-check description__icon--animation"></i>
                         </div>
                     </div>
-                    <div class="container__cards--modifier container__cards--modifier--3">
-                        <div class="container__description">
-                            <div class="description description__nom">Tiramisu</div>
-                            <div class="description description__ingredient">À la noisette</div>
+                    <div class="corps__cartes--menu corps__cartes--menu--3">
+                        <div class="corps__description">
+                            <div class="description description__nom">Tiramitsu</div>
+                            <div class="description description__ingredient">&Agrave; la noisette</div>
                         </div>
                         <div class="description description__prix">23€</div>
                         <div class="description__animation">
@@ -130,7 +138,9 @@
                         </div>
                     </div>
                 </div>
-                <button type="button" class="header__bouton header__bouton--modifier">Commander</button>
+                </div>
+                </div>
+                <button type="button" class="bouton bouton--menu">Commander</button>
             </div>
             <div class="footer">
                 <div class="footer__titre">ohmyfood</div>
@@ -146,7 +156,7 @@
                             <p>mentions légales</p>
                         </li>
                         <li class="footer__element">
-                            <p>Contact</p>
+                            <p><a href="mailto:contact&ohmyfood.com">Contact</a></p>
                         </li>
                     </ul>
                 </nav>

@@ -1,10 +1,11 @@
 .fonctionnement{
     background-color: white;
-    /*&__titre{
+    &__titre{
         margin:0 auto;
-        max-width: 315px;
+        max-width: 500px;
         width:100%;
-    }*/
+        padding:40px 0px 30px 20px;
+    }
     &__liste{
         @extend .header;
         background-color: white;
@@ -29,7 +30,7 @@
         align-items: center;
         font-weight:500;
         width:100%;
-        //max-width:315px;
+        max-width:500px;
         height:75px;
         box-shadow: 5px 5px 20px $gris-ombre;
         border-radius: 20px;

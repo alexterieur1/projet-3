@@ -1,4 +1,4 @@
-.cards{
+.cartes{
     &__nouveau{
         position:absolute;
         font-size: 12px;
@@ -11,7 +11,7 @@
         color:#157653;
     }
     &__image{
-        border-radius: $radius-cards $radius-cards 0px 0px;
+        border-radius: $radius-cartes $radius-cartes 0px 0px;
         object-fit:cover;
         width:100%;
         height:160px;
