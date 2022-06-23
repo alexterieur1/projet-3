@@ -7,6 +7,7 @@
     svg {
         overflow: visible;
         width: 24px;
+        fill-opacity: 0;
     }
   
     path {
@@ -23,7 +24,7 @@
         }
     }
   
-    .coeur__principal:active path {
+    .coeur__principal:hover path {
         animation: contour 2s ease-in-out forwards;
     }
 }
@@ -38,7 +39,7 @@
   
   @keyframes contour {
     0%{
-        fill:#F4F4F4;
+        fill-opacity: 0;
     }
     30% {
         stroke-dashoffset: 1550;
@@ -49,13 +50,15 @@
     80% {
         transform: scale(1.1);
         stroke-dashoffset: 3100;
-        fill:#F4F4F4;
+        fill-opacity: 0;
     }
     90% {
         transform: scale(1);
+        fill-opacity: 1;
     }
     100% {
         stroke-dashoffset: 1550;
+        fill-opacity: 1;
     }
   }
 

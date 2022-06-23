@@ -67,10 +67,10 @@
                     animation-delay: $duree-animation + $delais-animation* $i;
                 }
             }
-            &:active > .description__animation{
+            &:hover > .description__animation{
                 width:60px
             }
-            &:active > .description__animation .description__icon--animation{
+            &:hover > .description__animation .description__icon--animation{
                 animation:roulade 500ms ease-in 0ms;
             }
         }

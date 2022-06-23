@@ -35,10 +35,7 @@
         height:25px;
         border-radius: 25px;
         color: $couleur-tertiaire;
-        z-index: 10;/*
-        transition:transform 500ms ease-in;
-        transform:rotate(90deg);
-        animation-fill-mode: none;*/
+        z-index: 10;
     }
     &__animation{
         display:flex;

@@ -8,7 +8,7 @@
     z-index: 100;
     animation: 1ms ease-out $duree-animation 1 fond_blanc;
     animation-fill-mode: both;
-    display:none;
+    display:flex;
     flex-direction:row;
     justify-content: center;
     align-items: center;

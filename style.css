@@ -24,6 +24,19 @@ p a {
   color: white;
 }
 
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .bouton {
   background: linear-gradient(350deg, #9356DC, #FF79DA);
   color: white;
@@ -67,6 +80,7 @@ p a {
 .coeur__contenu svg {
   overflow: visible;
   width: 24px;
+  fill-opacity: 0;
 }
 
 .coeur__contenu path {
@@ -80,7 +94,7 @@ p a {
   margin: 40px 30px 20px 0px;
 }
 
-.coeur__contenu .coeur__principal:active path {
+.coeur__contenu .coeur__principal:hover path {
   -webkit-animation: contour 2s ease-in-out forwards;
           animation: contour 2s ease-in-out forwards;
 }
@@ -95,7 +109,7 @@ p a {
 
 @-webkit-keyframes contour {
   0% {
-    fill: #F4F4F4;
+    fill-opacity: 0;
   }
   30% {
     stroke-dashoffset: 1550;
@@ -107,20 +121,22 @@ p a {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
     stroke-dashoffset: 3100;
-    fill: #F4F4F4;
+    fill-opacity: 0;
   }
   90% {
     -webkit-transform: scale(1);
             transform: scale(1);
+    fill-opacity: 1;
   }
   100% {
     stroke-dashoffset: 1550;
+    fill-opacity: 1;
   }
 }
 
 @keyframes contour {
   0% {
-    fill: #F4F4F4;
+    fill-opacity: 0;
   }
   30% {
     stroke-dashoffset: 1550;
@@ -132,14 +148,16 @@ p a {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
     stroke-dashoffset: 3100;
-    fill: #F4F4F4;
+    fill-opacity: 0;
   }
   90% {
     -webkit-transform: scale(1);
             transform: scale(1);
+    fill-opacity: 1;
   }
   100% {
     stroke-dashoffset: 1550;
+    fill-opacity: 1;
   }
 }
 
@@ -239,11 +257,13 @@ p a {
   left: 0px;
   background-color: white;
   z-index: 100;
-  -webkit-animation: 1ms ease-out 0ms 1 fond_blanc;
-          animation: 1ms ease-out 0ms 1 fond_blanc;
+  -webkit-animation: 1ms ease-out 3000ms 1 fond_blanc;
+          animation: 1ms ease-out 3000ms 1 fond_blanc;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -429,37 +449,37 @@ p a {
   -webkit-box-shadow: 5px 5px 20px #cdcdcd;
           box-shadow: 5px 5px 20px #cdcdcd;
   cursor: pointer;
-  -webkit-animation: 200ms ease-in calc(0ms + 200ms) 1 affichage_recette;
-          animation: 200ms ease-in calc(0ms + 200ms) 1 affichage_recette;
+  -webkit-animation: 200ms ease-in calc(3000ms + 200ms) 1 affichage_recette;
+          animation: 200ms ease-in calc(3000ms + 200ms) 1 affichage_recette;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
 
 .corps__cartes--menu--1 {
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
+  -webkit-animation-delay: 3200ms;
+          animation-delay: 3200ms;
 }
 
 .corps__cartes--menu--2 {
-  -webkit-animation-delay: 400ms;
-          animation-delay: 400ms;
+  -webkit-animation-delay: 3400ms;
+          animation-delay: 3400ms;
 }
 
 .corps__cartes--menu--3 {
-  -webkit-animation-delay: 600ms;
-          animation-delay: 600ms;
+  -webkit-animation-delay: 3600ms;
+          animation-delay: 3600ms;
 }
 
 .corps__cartes--menu--4 {
-  -webkit-animation-delay: 800ms;
-          animation-delay: 800ms;
+  -webkit-animation-delay: 3800ms;
+          animation-delay: 3800ms;
 }
 
-.corps__cartes--menu:active > .description__animation {
+.corps__cartes--menu:hover > .description__animation {
   width: 60px;
 }
 
-.corps__cartes--menu:active > .description__animation .description__icon--animation {
+.corps__cartes--menu:hover > .description__animation .description__icon--animation {
   -webkit-animation: roulade 500ms ease-in 0ms;
           animation: roulade 500ms ease-in 0ms;
 }
@@ -632,10 +652,6 @@ p a {
   border-radius: 25px;
   color: #99E2D0;
   z-index: 10;
-  /*
-        transition:transform 500ms ease-in;
-        transform:rotate(90deg);
-        animation-fill-mode: none;*/
 }
 
 .description__animation {
@@ -658,19 +674,6 @@ p a {
   transition: width 500ms ease-in, transform 500ms ease-in;
   transition: width 500ms ease-in, transform 500ms ease-in, -webkit-transform 500ms ease-in;
   overflow: hidden;
-}
-
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .header__bandetitre {
@@ -790,9 +793,10 @@ header {
   width: 20px;
   max-width: 20px;
   margin-right: 6px;
-  /*&--premier{
-            padding-right:12px;
-        }*/
+}
+
+.footer__icon--premier {
+  padding-right: 12px;
 }
 
 @media (min-width: 768px) {
