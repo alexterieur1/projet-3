@@ -1,9 +1,8 @@
 .coeur__contenu{
-    stroke: black;
+    stroke:black;
     stroke-width: 25px;
     cursor: pointer;
     position: relative;
-
     svg {
         overflow: visible;
         width: 24px;
@@ -23,9 +22,9 @@
             }
         }
     }
-  
-    .coeur__principal:hover path {
+    .coeur__principal:hover path{
         animation: contour 2s ease-in-out forwards;
+        //stroke:url(#degrade_couleur);
     }
 }
 .stop{
@@ -45,19 +44,16 @@
         stroke-dashoffset: 1550;
     }
     60% {
-        stroke-dashoffset: 3100;
+        transform: scale(1.1);
+        stroke-dashoffset: 1550;
+        fill-opacity: 0;
+        stroke:url(#degrade_couleur);
     }
     80% {
-        transform: scale(1.1);
-        stroke-dashoffset: 3100;
-        fill-opacity: 0;
-    }
-    90% {
         transform: scale(1);
         fill-opacity: 1;
     }
     100% {
-        stroke-dashoffset: 1550;
         fill-opacity: 1;
     }
   }

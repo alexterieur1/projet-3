@@ -36,8 +36,8 @@
 
 @keyframes fond_blanc{
     100%{
-        translate: 100%;
-        visibility:0;
+        transform:translateX(100%);
+        visibility:hidden;
     }
 }
 

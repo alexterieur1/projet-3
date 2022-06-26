@@ -145,8 +145,8 @@
             margin:0 auto;
         }
         &__titreprincipal{
-            width: 1250px;
-            margin:0 auto;
+            max-width: 1250px;
+            display: flex;
         }
     }
 }
