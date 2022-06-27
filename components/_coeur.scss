@@ -52,9 +52,11 @@
     80% {
         transform: scale(1);
         fill-opacity: 1;
+        stroke:url(#degrade_couleur);
     }
     100% {
         fill-opacity: 1;
+        stroke:url(#degrade_couleur);
     }
   }
 
