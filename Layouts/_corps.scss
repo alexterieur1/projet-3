@@ -64,7 +64,7 @@
             animation-fill-mode: both;
             @for $i from 1 through 4{
                 &--#{$i}{
-                    animation-delay: $duree-animation + $delais-animation* $i;
+                    animation-delay:$delais-animation* $i;
                 }
             }
             &:hover > .description__animation{

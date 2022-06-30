@@ -461,23 +461,23 @@ ul {
 }
 
 .corps__cartes--menu--1 {
-  -webkit-animation-delay: 3200ms;
-          animation-delay: 3200ms;
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
 }
 
 .corps__cartes--menu--2 {
-  -webkit-animation-delay: 3400ms;
-          animation-delay: 3400ms;
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
 }
 
 .corps__cartes--menu--3 {
-  -webkit-animation-delay: 3600ms;
-          animation-delay: 3600ms;
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
 }
 
 .corps__cartes--menu--4 {
-  -webkit-animation-delay: 3800ms;
-          animation-delay: 3800ms;
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
 }
 
 .corps__cartes--menu:hover > .description__animation {
